@@ -25,4 +25,9 @@ export class UserService {
         }
         
     }
+
+
+    async getUserById (id:string){
+        return this.userModel.findOne({_id: id});
+    }
 }
