@@ -12,4 +12,6 @@ export class RegisterDto {
     email : string;
     @IsString()
     password: string;
+
+    role?:string;
 }

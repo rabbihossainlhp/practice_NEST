@@ -40,7 +40,7 @@ export class AuthService {
         throw new BadRequestException("creadential may not matching...")
       }
 
-      let payload = {subject:isUserExist._id}
+      let payload = {subject:isUserExist._id, role:isUserExist.role}
       const token = await this.jwtService.signAsync(payload);
       return {token:token};
 

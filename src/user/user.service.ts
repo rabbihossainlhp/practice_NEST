@@ -14,7 +14,8 @@ export class UserService {
             firstName: registerDto.firstName,
             lastname: registerDto.lastName,
             email: registerDto.email,
-            password: registerDto.password 
+            password: registerDto.password,
+            role:registerDto.role
         })
         }catch(err){
             const duplicate_error_key_code = 11000;
